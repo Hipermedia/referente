@@ -1,0 +1,220 @@
+/*------------------------------------------------*/
+/*-----------------[HEADER]-----------------------*/
+/*------------------------------------------------*/
+.Header { 
+	/*padding: .75rem .8rem;*/
+	width: $desktop-width;
+	position: relative;
+	clear: both;
+	display: block;
+	height: auto;
+	background: #fff;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	@include transicion();
+	
+	@media (max-width: $desktop-width) {
+		width: 100%;
+	}
+
+	.Header-contenido {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		/* Logo CE */
+		.Header-logoCE {
+			padding: 2rem 0;
+			padding-right: $padding-bloques*2;
+			display: block;
+			float: left;
+			width: 100%;
+			border-bottom: 3px solid $bg-color-containers2;
+			/*max-width: 730px;*/
+
+			@media (max-width: $tablet-width) {
+				max-width: 100%;
+				width: 100%;
+				text-align: center;
+				padding: 1rem 0;
+			}
+			img {
+				width: auto;
+				display: block;
+				margin: 0 auto;
+				/*max-width: 730px;*/
+				@include transicion();
+
+				@media (max-width: $tablet-width) {
+					width: 80%;
+				}
+
+				@media (max-width: $smaller-width) {
+					width: 100%;
+				}
+			}
+		}
+		/* Logo CE */
+		.Header-logoRR {
+			width: 35%;
+			display: block;
+			float: left;
+			padding-bottom: 1rem;
+
+			@media (max-width: $tablet-width) {
+				max-width: 100%;
+				width: 100%;
+				text-align: center;
+				padding: 1rem 0;
+			}
+			img {
+				width: 100%;
+				max-width: 420px;
+				@include transicion();
+
+				@media (max-width: $tablet-width) {
+					width: 75%;
+				}
+			}
+		}
+		/* Botones Sociales */
+		.social {
+			float: left;
+			padding: .55rem 1em;	
+
+			@media (max-width: $tablet-width) {
+				width: 100%;
+				clear: both;
+				text-align: center;
+			}
+		}
+		/* Search Form */
+		#searchform {
+			width: 35%;
+			background: $bg-color-containers;
+			float: left;
+			padding: .5rem 1rem;
+			@include transicion();
+
+			@media (max-width: $tablet-width) {
+				display: none;
+			}
+			
+			div { margin: 0; }
+			label { display: none; }
+		}
+		
+		 #s {
+		 	text-align: center;
+		 	border-radius: 6px;
+			float: right;
+			@include transicion();
+			width: 100%;
+			background: #fff;
+		}
+		#s:focus {
+			background-color: #f9f9f9;
+			width: 100%;
+		}
+		#searchsubmit {
+			display: none;
+		}
+		.only-search #searchform {
+			top: 5px;
+			z-index: 1;
+		}
+		.only-search #s {
+			background-color: #666;
+			border-color: #000;
+			color: #222;
+		}
+		.only-search #s,
+		.only-search #s:focus {
+			width: 85%;
+		}
+		.only-search #s:focus {
+			background-color: #bbb;
+		}
+		.with-image #searchform {
+			top: auto;
+			bottom: -27px;
+			max-width: 195px;
+		}
+		.only-search + #access div {
+			padding-right: 205px;
+		}
+
+		.Header-bloqueInferior {
+			padding-top: .8rem;
+			display: inline-block;
+			width: 100%;
+
+			.Header-bloqueUtilitario {
+				background: $bg-color-containers;
+				width: 25%;
+				float: left;
+				font-weight: normal;
+				height: 112px;
+
+				padding-bottom: .8rem;
+				@media (max-width: $tablet-width) {
+					width: 100%;
+					text-align: center;
+				}
+
+				.fecha {
+					/*text-align: center;*/
+					/*padding: .1rem 0 0 .3rem; */
+					padding: .5rem .8rem 0; 
+					color: $sub-color-text;
+					margin: 0; 
+					width: auto;
+					font-weight: bold;
+					@media (max-width: $tablet-width) {
+					 	padding: 0;
+					 	width: 100%;
+					 	text-align: center;
+					 	padding: .3rem 0;
+					 } 
+				}
+
+				.clima {
+					padding: 0 .5rem;
+					color: $sub-color-text;
+
+						.img {
+							width: 15%;
+							display: inline-block;
+						}
+
+						.temp {
+							font-size: 14px;
+							font-weight: bold;
+							margin: 0;
+							width: 20%;
+							display: inline-block;
+							vertical-align: middle;
+						}
+
+						.ciudad {
+							font-size: 14px;
+							font-weight: bold;
+							margin: 0;
+							width: 60%;
+							display: inline-block;
+							vertical-align: middle;
+						}
+					
+				}
+
+				.social {
+					padding: 0 1rem .5rem;
+
+					i {
+						font-size: 2rem;
+					}
+				}
+			}
+		}	
+	}
+}

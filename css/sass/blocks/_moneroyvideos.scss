@@ -1,0 +1,99 @@
+/*------------------------------------------------*/
+/*------------------[MONERO Y VIDEOS]-------------*/
+/*------------------------------------------------*/
+
+.RotatorioVideos {
+	float: left;
+	width: 50%;
+	margin-bottom: 1.5rem;
+	@media (max-width: $tablet-width) {
+		width: 50%;
+	}
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
+
+	#cover-slider-videos { margin: 0; border-top: none; background: $bg-color-containers}
+	
+	.flex-direction-nav a { overflow: visible; }
+
+	.flex-direction-nav {
+		
+		.flex-nav-prev {
+
+			.flex-prev {
+
+			}
+
+		}
+
+		.flex-nav-next {
+
+			.flex-next {
+
+			}
+
+		}
+
+	}
+	
+	.RotatorioVideos-caption {
+		padding: .3rem 0;
+		position: relative;
+		text-align: center;
+		background: $bg-color-containers;
+		margin: 0;
+	}
+
+	.flex-control-nav {
+		position: relative;
+		bottom: 0;
+		padding-top: 1rem;
+		padding-bottom: .5rem;
+		background: $block-details;
+	}
+}
+
+.Monero {
+	padding: 0 .6rem 0 .5rem;
+	float: left;
+	width: 25%;
+	margin-bottom: 1.5rem;
+	@media (max-width: $tablet-width) {
+		width: 50%;
+		padding-right: 0.4rem;
+	}
+	@media (max-width: $smaller-width) {
+		float: none;
+		width: 100%;
+	}
+
+	.Monero-figure {
+		margin: 0;
+		line-height: 0;
+
+		img {
+			height: 375px;
+		}
+
+		.Monero-caption {
+			background: $bg-color-containers;
+			padding: .5rem 0;
+			margin-top: -2.55rem;
+			position: relative;
+			z-index: 1;
+
+			.Monero-botonMas {
+				background: $block-details;
+				text-align: center;
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+				border-radius: 3px;
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+}
+

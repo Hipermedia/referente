@@ -1,0 +1,98 @@
+/*------------------------------------------------*/
+/*------------------[	]----------------------*/
+/*------------------------------------------------*/
+
+.ColumnistasDestacados {
+	background: #D7D7D7;
+	margin-top: -0.8rem;
+	
+	h4 {
+		background: $main-color-dark;
+		color: #EAEAEA;
+		margin: 0;
+		text-align: center;
+		padding: .3rem 0;
+		font-size: 1.6rem;
+	}
+	.wrapper {
+		display: block;
+		margin: 0 auto;
+		width: 1200px;
+		@media (max-width: $tablet-width) {
+			width: 100%;
+		}
+		/*padding: 0 .8rem;*/
+
+		#cover-slider-columnistas { 
+			background: #D7D7D7; 
+			border: none; 
+			margin: 0;
+
+			ul {
+
+				li {
+					/*margin: 0 10px;*/
+
+					figure {
+						padding: 1rem;
+						background: none;
+					}
+				}
+			} 
+		}
+
+		.flex-direction-nav a { overflow: visible; }
+
+		.flex-direction-nav {
+			
+			.flex-nav-prev {
+
+				.flex-prev {
+
+				}
+
+			}
+
+			.flex-nav-next {
+
+				.flex-next {
+
+				}
+
+			}
+
+		}
+
+		li {
+			text-align: center;
+			@media (max-width: $tablet-width) {
+			}
+
+			figure {
+				background: #EBEBEB;
+				width: 100%;
+				display: block;
+				text-align: center;
+
+				i {
+					color: #9C9C9C;
+					font-size: 13rem;
+				}
+			}
+			
+			h2,h3 { margin: 0; padding: .4rem 0 .4rem .3rem; }
+			a { color: #333; }
+			.ColumnistasDestacados-nota {
+				color: #333;
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+
+			.ColumnistasDestacados-nombre {
+				color: #444;
+				font-size: 1rem;
+				font-weight: normal;
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+/*------------------------------------------------*/
+/*------------------[	]----------------------*/
+/*------------------------------------------------*/
+
+.SidebarMasLeido {
+	width: 29%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+
+	.h2 {
+		background: $main-color-light;
+		margin: 0;
+		color: #FEFEFE;
+		font-size: 1.3rem;
+		font-weight: bold;
+		padding: .4rem;
+	}
+
+	.SidebarMasLeido-tabs {
+		background: #8A8A8A;
+
+		li.active {
+			background: #EBEBEB;
+
+			a { 
+				background: none; 
+				border: none;
+				color: #8A8A8A;
+				font-weight: bold;  
+			}
+		}
+
+		li {
+			width: 50%;
+
+			a {
+				border: none;
+				margin: 0;
+				color: #FAFAFA;
+				font-weight: bold;
+			}
+
+			a:hover {
+				border-radius: 0;
+				border: none;
+				background: none;
+			}
+		}
+	}
+	
+	.tab-content {
+		background: #EBEBEB;
+
+		.SidebarMasLeido-ficha {
+			width: 100%;
+			display: inline-block;
+
+			figure {
+				text-align: center;
+				background: #CFCFCF;
+				width: 20%;
+				float: left;
+				margin: 5%;
+
+				i {
+					color: #999999;
+					font-size: 3rem;
+				}
+			}
+
+			h2,p {
+				margin: 0;
+				width: 70%;
+				float: left;
+			}
+
+			h2 {
+				color: #545454;
+				font-size: 1rem;
+				font-weight: bold;
+				padding-top: 1rem;
+			}
+
+			p {
+				color: #969696;
+				font-weight: bold;
+				font-size: .8rem;
+			}
+		}
+	}
+}

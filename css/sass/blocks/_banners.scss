@@ -1,0 +1,86 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+
+.u-BannerFigure { margin: 0; }
+
+.BannerHeader {
+
+	figure {
+		padding-right: .8rem;
+		float: left;
+		width: 75%;
+		max-height: 112px;
+		overflow: hidden;
+
+		@media (max-width: $tablet-width) {
+			width: 100%;
+			max-height: auto;
+			padding: 0 0 .8rem 0;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.Banner-slider {
+	padding: 0.8rem 0.3rem;
+	@media (max-width: $tablet-width) {
+		/*padding: 0;*/
+	}
+
+	figure {
+		margin: 0;
+	}
+}
+
+.BannerMonero {
+	padding-left: .5rem;
+	float: left;
+	width: 33.5%;
+	margin-top: .5rem;
+	@media (max-width: $tablet-width) {
+		width: 38%;
+		min-height: 165px;
+	}
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
+
+	figure {
+		margin: 0;
+
+		img {
+			@media (max-width: $tablet-width) {
+				height: 165px;
+			}
+		}
+	}
+}
+
+.BannerNoticias {
+	padding: 1.3rem 1rem 1.3rem 0;
+
+	figure {
+		margin: 0;
+
+		img {
+			padding-top: 1rem;
+		}
+	}
+}
+
+.BannerSidebar {
+	padding: 1rem .5rem;
+	@media (max-width: $tablet-width) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.u-hidden {
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+}

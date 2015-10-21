@@ -1,0 +1,31 @@
+.Moneros {
+	padding: 0 .5rem;
+	width: 70%;
+	float: left;
+	display: block;
+	@media (max-width: $tablet-width) {
+		width: 100%;
+		float: none;
+	}
+
+	.Moneros-monero {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+		height: 400px;
+		margin-right: 3%;
+		@media (max-width: $smaller-width) {
+			max-height: 100px;
+		}
+
+		.u-lightbox {
+			width: 100%;
+			height: 100%;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}

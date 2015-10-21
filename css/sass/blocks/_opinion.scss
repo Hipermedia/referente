@@ -1,0 +1,92 @@
+/*------------------------------------------------*/
+/*------------------[	]----------------------*/
+/*------------------------------------------------*/
+
+.SidebarOpinion {
+	padding-left: .5rem;
+	padding-top: 2.3rem;
+	padding-right: .5rem;
+	@media (max-width: $tablet-width) {
+		/*float: left;*/
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
+	.h2 {
+		background: $main-color-light;
+		margin: 0;
+		color: $main-color-text;
+		font-size: 1.3rem;
+		font-weight: bold;
+		padding: .4rem;
+	}
+
+	.SidebarOpinion-tabs {
+		background: $bg-color-containers2;
+
+		li.active {
+			background: $bg-color-containers;
+
+			a { 
+				background: none; 
+				border: none;
+				color: $sub-color-text;
+				font-weight: bold;  
+			}
+		}
+
+		li {
+			width: 33.3%;
+
+			a {
+				border: none;
+				margin: 0;
+				color: $main-color-text;
+				font-weight: bold;
+				padding: 10px 3px;
+				text-align: center;
+			}
+
+			a:hover {
+				border-radius: 0;
+				border: none;
+				background: none;
+			}
+		}
+	}
+	
+	.tab-content {
+		background: $bg-color-containers;
+
+		.SidebarOpinion-ficha {
+			width: 100%;
+			display: inline-block;
+
+			figure {
+				text-align: center;
+				width: 20%;
+				float: left;
+				margin: 5%;
+			}
+
+			h2,p {
+				margin: 0;
+				width: 70%;
+				float: left;
+			}
+
+			h2 {
+				color: $sub-color-text;
+				font-size: 1rem;
+				font-weight: bold;
+				padding-top: 1rem;
+			}
+
+			p {
+				color: $sub-color-text;
+				font-weight: bold;
+				font-size: .8rem;
+			}
+		}
+	}
+}
